@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link id="switch-color" rel="stylesheet" href="css/main-color3.css">
+	<link rel="stylesheet" href="css/main-color3.css">
 
 </head>
 <body class="body" data-spy="scroll" data-target=".header" data-offset="60">
@@ -85,23 +85,7 @@
 	<!-- end header -->
 
 	<!-- home -->
-	<section id="home" class="home">
-		<!-- home slider -->
-		<div class="owl-carousel home__slider">
-			<!-- slide -->
-			<div class="item" data-bg="img/home/slide.jpg"></div>
-			<!-- end slide -->
-
-			<!-- slide -->
-			<div class="item" data-bg="img/home/slide.jpg"></div>
-			<!-- end slide -->
-
-			<!-- slide -->
-			<div class="item" data-bg="img/home/slide.jpg"></div>
-			<!-- end slide -->
-		</div>
-		<!-- end home slider -->
-
+	<section id="home" class="home section--bg" data-bg="img/home/slide.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -125,7 +109,7 @@
 	<!-- end home -->
 
 	<!-- about -->
-	<section id="about" class="about about--angle2 section--gradient">
+	<section id="about" class="about about--angle section--gradient">
 		<div class="container">
 			<div class="row">
 				<!-- section title -->
@@ -158,34 +142,34 @@
 				</div>
 				<!-- end section title -->
 
-				<div class="col-xs-12 col-lg-4">
-					<!-- box (style 6) -->
-					<div class="box6">
-						<span class="box6__number">01</span>
-						<h3 class="box6__title">Sign up for BuyCoin</h3>
-						<p class="box6__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or <b>randomised words</b> which don't look even slightly.</p>
+				<div class="col-xs-12 col-sm-4">
+					<!-- box (style 4) -->
+					<div class="box4">
+						<span class="box4__number">01</span>
+						<h3 class="box4__title">Sign up for BuyCoin</h3>
+						<p class="box4__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or <b>randomised words</b> which don't look even slightly.</p>
 					</div>
-					<!-- end box (style 6) -->
+					<!-- end box (style 4) -->
 				</div>
 
-				<div class="col-xs-12 col-lg-4">
-					<!-- box (style 6) -->
-					<div class="box6">
-						<span class="box6__number">02</span>
-						<h3 class="box6__title">Connect Your Bank Account</h3>
-						<p class="box6__text">There are many variations of passages of Lorem Ipsum available, <b>but the majority have suffered</b> alteration in some form, by injected humour, or randomised words which don't look even slightly.</p>
+				<div class="col-xs-12 col-sm-4">
+					<!-- box (style 4) -->
+					<div class="box4">
+						<span class="box4__number">02</span>
+						<h3 class="box4__title">Connect Your Bank Account</h3>
+						<p class="box4__text">There are many variations of passages of Lorem Ipsum available, <b>but the majority have suffered</b> alteration in some form, by injected humour, or randomised words which don't look even slightly.</p>
 					</div>
-					<!-- end box (style 6) -->
+					<!-- end box (style 4) -->
 				</div>
 
-				<div class="col-xs-12 col-lg-4">
-					<!-- box (style 6) -->
-					<div class="box6">
-						<span class="box6__number">03</span>
-						<h3 class="box6__title">Buy and Sell Coin</h3>
-						<p class="box6__text">There are many variations of passages of Lorem Ipsum available, but the majority <a href="#">have suffered</a> alteration in some form, by injected humour, or randomised words which don't look even slightly.</p>
+				<div class="col-xs-12 col-sm-4">
+					<!-- box (style 4) -->
+					<div class="box4">
+						<span class="box4__number">03</span>
+						<h3 class="box4__title">Buy and Sell Coin</h3>
+						<p class="box4__text">There are many variations of passages of Lorem Ipsum available, but the majority <a href="#">have suffered</a> alteration in some form, by injected humour, or randomised words which don't look even slightly.</p>
 					</div>
-					<!-- end box (style 6) -->
+					<!-- end box (style 4) -->
 				</div>
 
 				<!-- section button -->
@@ -361,37 +345,150 @@
 				</div>
 				<!-- end section title -->
 
-				<!-- offers list -->
+				<!-- tabs nav -->
 				<div class="col-xs-12">
-					<ul class="offers offers--single">
-						<li class="offers__item">
-							<span class="get">Get 0.0082 BTC</span>
-							<span class="for">for</span>
-							<span class="value">$100</span>
-							<a class="button" href="#">Buy</a>
-						</li>
-						<li class="offers__item">
-							<span class="get">Get 0.0165 BTC</span>
-							<span class="for">for</span>
-							<span class="value">$200</span>
-							<a class="button" href="#">Buy</a>
-						</li>
-						<li class="offers__item">
-							<span class="get">Get 0.0412 BTC</span>
-							<span class="for">for</span>
-							<span class="value">$500</span>
-							<a class="button" href="#">Buy</a>
-						</li>
-						<li class="offers__item">
-							<span class="get">Get 0.0825 BTC</span>
-							<span class="for">for</span>
-							<span class="value">$1000</span>
-							<a class="button" href="#">Buy</a>
-						</li>
-						<li class="clearfix"></li>
+					<ul class="tabs tabs--mt" role="tablist">
+						<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">USD</a></li>
+						<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">EUR</a></li>
+						<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">GBP</a></li>
+						<li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">RUB</a></li>
 					</ul>
 				</div>
-				<!-- end offers list -->
+				<!-- end tabs nav -->
+
+				<!-- tabs content -->
+				<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+					<div class="tab-content">
+						<!-- tab1 -->
+						<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+							<ul class="offers">
+								<li class="offers__item">
+									<span class="get">Get 0.0082 BTC</span>
+									<span class="for">for</span>
+									<span class="value">$100</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0165 BTC</span>
+									<span class="for">for</span>
+									<span class="value">$200</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0412 BTC</span>
+									<span class="for">for</span>
+									<span class="value">$500</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0825 BTC</span>
+									<span class="for">for</span>
+									<span class="value">$1000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="clearfix"></li>
+							</ul>
+						</div>
+						<!-- end tab1 -->
+
+						<!-- tab2 -->
+						<div role="tabpanel" class="tab-pane fade" id="tab2">
+							<ul class="offers">
+								<li class="offers__item">
+									<span class="get">Get 0.01 BTC</span>
+									<span class="for">for</span>
+									<span class="value">€100</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.02 BTC</span>
+									<span class="for">for</span>
+									<span class="value">€200</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.05 BTC</span>
+									<span class="for">for</span>
+									<span class="value">€500</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.1 BTC</span>
+									<span class="for">for</span>
+									<span class="value">€1000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="clearfix"></li>
+							</ul>
+						</div>
+						<!-- end tab2 -->
+
+						<!-- tab3 -->
+						<div role="tabpanel" class="tab-pane fade" id="tab3">
+							<ul class="offers">
+								<li class="offers__item">
+									<span class="get">Get 0.0105 BTC</span>
+									<span class="for">for</span>
+									<span class="value">£100</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0211 BTC</span>
+									<span class="for">for</span>
+									<span class="value">£200</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0422 BTC</span>
+									<span class="for">for</span>
+									<span class="value">£500</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.1052 BTC</span>
+									<span class="for">for</span>
+									<span class="value">£1000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="clearfix"></li>
+							</ul>
+						</div>
+						<!-- end tab3 -->
+
+						<!-- tab4 -->
+						<div role="tabpanel" class="tab-pane fade" id="tab4">
+							<ul class="offers">
+								<li class="offers__item">
+									<span class="get">Get 0.0132 BTC</span>
+									<span class="for">for</span>
+									<span class="value">₽10,000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0264 BTC</span>
+									<span class="for">for</span>
+									<span class="value">₽20,000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.0659 BTC</span>
+									<span class="for">for</span>
+									<span class="value">₽50,000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="offers__item">
+									<span class="get">Get 0.1318 BTC</span>
+									<span class="for">for</span>
+									<span class="value">₽100,000</span>
+									<a class="button" href="#">Buy</a>
+								</li>
+								<li class="clearfix"></li>
+							</ul>
+						</div>
+						<!-- end tab4 -->
+					</div>
+				</div>
+				<!-- end tabs content -->
 			</div>
 		</div>
 	</section>
@@ -556,7 +653,7 @@
 
 				<!-- section button -->
 				<div class="col-xs-12">
-					<a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank" class="section__btn">purchase now</a>
+					<a href="#" class="section__btn">purchase now</a>
 				</div>
 				<!-- end section button -->
 			</div>
@@ -565,7 +662,7 @@
 	<!-- end safety -->
 
 	<!-- video -->
-	<section class="section video section--bg" data-bg="img/section-bg/section-bg1.jpg">
+	<section class="section section--bg video" data-bg="img/section-bg/section-bg1.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
@@ -579,7 +676,7 @@
 	<!-- end video -->
 
 	<!-- roadmap -->
-	<section class="section">
+	<section class="section section--grey">
 		<div class="container-fluid">
 			<div class="row">
 				<!-- section title -->
@@ -627,7 +724,7 @@
 	<!-- end roadmap -->
 
 	<!-- info -->
-	<section class="section section--grey">
+	<section class="section">
 		<div class="container">
 			<div class="row">
 				<!-- section title -->
@@ -651,7 +748,7 @@
 
 				<!-- section button -->
 				<div class="col-xs-12">
-					<a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank" class="section__btn">purchase now</a>
+					<a href="#" class="section__btn">purchase now</a>
 				</div>
 				<!-- end section button -->
 			</div>
@@ -659,6 +756,87 @@
 	</section>
 	<!-- end info -->
 
+	<!-- blog -->
+	<section id="blog" class="section section--grey">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-xs-12">
+					<h2 class="section__title">Blog</h2>
+					<span class="section__tagline">Our publications</span>
+				</div>
+				<!-- end section title -->
+
+				<!-- article -->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<article class="article">
+						<figure class="article__img">
+							<a href="#">
+								<img src="img/blog/article.jpg" alt="">
+							</a>
+						</figure>
+
+						<header class="article__header">
+							<h3 class="article__title">
+								<a href="#">Blockchain</a>
+							</h3>
+						</header>
+
+						<div class="article__content">
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
+						</div>
+					</article>
+				</div>
+				<!-- end article -->
+
+				<!-- article -->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<article class="article">
+						<figure class="article__img">
+							<a href="#">
+								<img src="img/blog/article.jpg" alt="">
+							</a>
+						</figure>
+
+						<header class="article__header">
+							<h3 class="article__title">
+								<a href="#">Finance</a>
+							</h3>
+						</header>
+
+						<div class="article__content">
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
+						</div>
+					</article>
+				</div>
+				<!-- end article -->
+
+				<!-- article -->
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<article class="article">
+						<figure class="article__img">
+							<a href="#">
+								<img src="img/blog/article.jpg" alt="">
+							</a>
+						</figure>
+
+						<header class="article__header">
+							<h3 class="article__title">
+								<a href="#">Business</a>
+							</h3>
+						</header>
+
+						<div class="article__content">
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
+						</div>
+					</article>
+				</div>
+				<!-- end article -->
+			</div>
+		</div>
+	</section>
+	<!-- end blog -->
+	
 	<!-- team -->
 	<section class="section">
 		<div class="container">
@@ -772,87 +950,6 @@
 		<!-- end slider -->
 	</section>
 	<!-- end team -->
-
-	<!-- blog -->
-	<section id="blog" class="section section--grey">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-xs-12">
-					<h2 class="section__title">Blog</h2>
-					<span class="section__tagline">Our publications</span>
-				</div>
-				<!-- end section title -->
-
-				<!-- article -->
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<article class="article">
-						<figure class="article__img">
-							<a href="#">
-								<img src="img/blog/article.jpg" alt="">
-							</a>
-						</figure>
-
-						<header class="article__header">
-							<h3 class="article__title">
-								<a href="#">Blockchain</a>
-							</h3>
-						</header>
-
-						<div class="article__content">
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
-						</div>
-					</article>
-				</div>
-				<!-- end article -->
-
-				<!-- article -->
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<article class="article">
-						<figure class="article__img">
-							<a href="#">
-								<img src="img/blog/article.jpg" alt="">
-							</a>
-						</figure>
-
-						<header class="article__header">
-							<h3 class="article__title">
-								<a href="#">Finance</a>
-							</h3>
-						</header>
-
-						<div class="article__content">
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
-						</div>
-					</article>
-				</div>
-				<!-- end article -->
-
-				<!-- article -->
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<article class="article">
-						<figure class="article__img">
-							<a href="#">
-								<img src="img/blog/article.jpg" alt="">
-							</a>
-						</figure>
-
-						<header class="article__header">
-							<h3 class="article__title">
-								<a href="#">Business</a>
-							</h3>
-						</header>
-
-						<div class="article__content">
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
-						</div>
-					</article>
-				</div>
-				<!-- end article -->
-			</div>
-		</div>
-	</section>
-	<!-- end blog -->
 
 	<!-- get in touch -->
 	<section id="contacts" class="section">
@@ -1021,7 +1118,7 @@
 
 				<div class="col-xs-12">
 					<!-- copyright -->
-					<small class="footer__copyright">© 2018 <a href="#">BuyCoin</a>. Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank">Dmitry Volkov</a></small>
+					<small class="footer__copyright">© 2017 <a href="#">BuyCoin</a>. Create by <a href="#">Dmitry Volkov</a></small>
 					<!-- end copyright -->
 				</div>
 			</div>
