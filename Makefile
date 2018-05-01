@@ -13,6 +13,7 @@ all: preprocess
 ##
 # Deploy to production
 production:
+	git push origin master
 	bundle exec cap production deploy
 
 ##
