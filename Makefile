@@ -26,11 +26,11 @@ commit: index.html
 
 bump-minor:
 	semver inc minor
-	git commit .sember -m"bump version"
+	git commit .semver -m"bump version"
 
 bump-patch:
 	semver inc patch
-	git commit .sember -m"bump version"
+	git commit .semver -m"bump version"
 
 clean:
 	rm -f "index.html"
