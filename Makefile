@@ -23,6 +23,14 @@ preprocess: index.html.erb
 commit: index.html
 	git commit index.html -m"build $(VERSION)"
 
+bump-minor:
+	semver inc minor
+	git commit .sember -m"bump version"
+
+bump-patch:
+	semver inc patch
+	git commit .sember -m"bump version"
+
 clean:
 	rm -f "index.html"
 
