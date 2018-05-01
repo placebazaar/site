@@ -8,7 +8,7 @@ TODAY=$(shell date +%F)
 
 # The first rule in a Makefile is the one executed by default ("make"). It
 # should always be the "all" rule, so that "make" and "make all" are identical.
-all: index.html
+all: preprocess
 
 ##
 # Deploy to production
@@ -17,11 +17,19 @@ production:
 
 ##
 # Preprocess the template using ERB templating.
-index.html: index.html.erb
+preprocess: index.html.erb
 	bundle exec erb version=$(VERSION) date=$(TODAY) index.html.erb > index.html
 
 commit: index.html
 	git commit index.html -m"build $(VERSION)"
+
+bump-minor:
+	semver inc minor
+	git commit .sember -m"bump version"
+
+bump-patch:
+	semver inc patch
+	git commit .sember -m"bump version"
 
 clean:
 	rm -f "index.html"
