@@ -1,284 +1,339 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>PlaceBazaar – Decentralized marketplace for worldwide mapping data</title>
-	<meta name="description" content="PlaceBazaar - Decentralized marketplace for worldwide mapping data">
-	<meta name="keywords" content="PlaceBazaar, Open Street Map, OpenStreetMap, OSM, Token, Blockchain, Decentralised, web3, coin, marketplace, mapping data">
-	<meta charset="utf-8">
-	<meta name="author" content="Bèr Kessels">
-	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>PlaceBazaar – Decentralized marketplace for worldwide mapping data</title>
+    <meta name="description" content="PlaceBazaar - Decentralized marketplace for worldwide mapping data">
+    <meta name="keywords" content="PlaceBazaar, Open Street Map, OpenStreetMap, OSM, Token, Blockchain, Decentralised, web3, coin, marketplace, mapping data">
+    <meta charset="utf-8">
+    <meta name="author" content="Bèr Kessels">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
-	<link rel="apple-touch-icon" href="icon/favicon-32x32.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="icon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
 
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Jura:600,700%7CRoboto:300,400,500,700" rel="stylesheet"> 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Jura:600,700%7CRoboto:300,400,500,700" rel="stylesheet"> 
 
-	<!-- Icons -->
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/main-color3.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/main-color3.css">
 
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//piwik.webschuur.com/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', '17']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
-</head>
-<body class="body" data-spy="scroll" data-target=".header" data-offset="60">
-	<!-- header -->
-	<header class="header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-					<!-- btn -->
-					<button class="header__btn" type="button">
-						<span class="lnr lnr-menu"></span>
-						<span class="lnr lnr-cross"></span>
-					</button>
-					<!-- end btn -->
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.webschuur.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '17']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+  <body class="body" data-spy="scroll" data-target=".header" data-offset="60">
+    <!-- header -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- btn -->
+            <button class="header__btn" type="button">
+              <span class="lnr lnr-menu"></span>
+              <span class="lnr lnr-cross"></span>
+            </button>
+            <!-- end btn -->
 
-					<!-- logo -->
-					<a data-scroll href="#home" class="header__logo">
-						<img class="header__logo-white" src="img/logo.png" alt="Logo">
-						<img class="header__logo-dark" src="img/logo--dark.png" alt="Logo">
-					</a>
-					<!-- end logo -->
+            <!-- logo -->
+            <a data-scroll href="#home" class="header__logo">
+              <img class="header__logo-white" src="img/logo.png" alt="Logo">
+              <img class="header__logo-dark" src="img/logo--dark.png" alt="Logo">
+            </a>
+            <!-- end logo -->
 
-					<!-- tagline -->
-					<span class="header__tagline">Place<br>Bazaar</span>
-					<!-- end tagline -->
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- end header -->
+            <!-- tagline -->
+            <span class="header__tagline">Place<br>Bazaar</span>
+            <!-- end tagline -->
 
-	<!-- home -->
-	<section id="home" class="home section--bg" data-bg="img/home/slide.jpg">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<!-- home content -->
-					<div class="home__content-wrap">
-						<div class="home__content">
-              <img src="img/logo_trans_square.png" alt="PlaceBazaar Logo"/>
-							<h1 class="home__title">PlaceBazaar</h1>
+            <!-- navigation -->
+            <ul class="nav header__nav">
+              <li>
+                <a data-scroll href="#about">About Us</a>
+              </li>
+              <li>
+                <a data-scroll href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- end navigation -->
 
-							<p class="home__text">Decentralized marketplace for worldwide mapping data</p>
+            <!-- sign in -->
+            <a href="#signin" class="header__signin modal-btn">Sign In</a>
+            <!-- end sign in -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
 
-							<a data-scroll href="#about" class="home__btn home__btn--color">Learn More</a>
-						</div>
-					</div>
-					<!-- end home content -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end home -->
+    <!-- home -->
+    <section id="home" class="home section--bg" data-bg="img/home/slide.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- home content -->
+            <div class="home__content-wrap">
+              <div class="home__content">
+                <img src="img/logo_trans_square.png" alt="PlaceBazaar Logo"/>
+                <h1 class="home__title">PlaceBazaar</h1>
 
-	<!-- about -->
-	<section id="about" class="about about--angle section--gradient">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-xs-12">
-					<h2 class="section__title section__title--white section__title--margin">About PlaceBazaar</h2>
-				</div>
-				<!-- end section title -->
+                <p class="home__text">Decentralized marketplace for worldwide mapping data</p>
 
-				<div class="col-xs-12">
-					<!-- about text -->
-					<div class="about__text">
-            <p><strong>Placebazaar</strong> is a platform where contributors
-            are paid to maintain and add data to a <strong>decentralized,
-              worldwide map</strong> of roads, trails, cafés, public transport
-            and much more.</p>
+                <a data-scroll href="#about" class="home__btn home__btn--color">Learn More</a>
+              </div>
+            </div>
+            <!-- end home content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
 
-            <p>PlaceBazaar connects parties in need of mapping
-            data, with contributors of that data, on <strong>a marketplace</strong>.
-            Built on top of the fantastic
-            OpenStreetmap data, we ensure the <strong>data is
-              uncensurable</strong> and the <strong>contributors are
-              paid</strong>. </p>
+    <!-- about -->
+    <section id="about" class="about about--angle section--gradient">
+      <div class="container">
+        <div class="row">
+          <!-- section title -->
+          <div class="col-xs-12">
+            <h2 class="section__title section__title--white section__title--margin">About PlaceBazaar</h2>
+          </div>
+          <!-- end section title -->
 
-            <p>The database is
-            distributed on IPFs, a decentral, uncensurable filesystem, allowing
-            unlimited access to this global, Open Source, mapping data.
-            Contributors can add any data and get paid in PBZ tokens by those
-            in need of data. A paid review process allows consumers to ensure
-            validity of the data.</p>
+          <div class="col-xs-12">
+            <!-- about text -->
+            <div class="about__text">
+              <p><strong>Placebazaar</strong> is a platform where contributors
+              are paid to maintain and add data to a <strong>decentralized,
+                worldwide map</strong> of roads, trails, cafés, public transport
+              and much more.</p>
 
-            <p><strong>We'll release much more detailed figures and a draft of the whitepaper the first week of may 2018.</strong></p>
-					</div>
-					</div>
-					<!-- end about text -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end about -->
+              <p>PlaceBazaar connects parties in need of mapping
+              data, with contributors of that data, on <strong>a marketplace</strong>.
+              Built on top of the fantastic
+              OpenStreetmap data, we ensure the <strong>data is
+                uncensurable</strong> and the <strong>contributors are
+                paid</strong>. </p>
 
-	<!-- get started -->
-	<section class="section section--pt0">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-xs-12">
-					<h2 class="section__title">The Marketplace</h2>
-					<span class="section__tagline">Requests and offers of worldwide mapping data</span>
-				</div>
-				<!-- end section title -->
+              <p>The database is
+              distributed on IPFs, a decentral, uncensurable filesystem, allowing
+              unlimited access to this global, Open Source, mapping data.
+              Contributors can add any data and get paid in PBZ tokens by those
+              in need of data. A paid review process allows consumers to ensure
+              validity of the data.</p>
 
-				<div class="col-xs-12 col-sm-4">
-					<!-- box (style 4) -->
-					<div class="box4">
-						<span class="box4__number">01</span>
-						<h3 class="box4__title">Request</h3>
-            <p class="box4__text">Need new or better mapping data? Or want a place verified? Place an offer to pay PBZ tokens for such data on the marketplace.</p>
-					</div>
-					<!-- end box (style 4) -->
-				</div>
+              <p><strong>We'll release much more detailed figures and a draft of the whitepaper the first week of may 2018.</strong></p>
+            </div>
+          </div>
+          <!-- end about text -->
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- end about -->
 
-				<div class="col-xs-12 col-sm-4">
-					<!-- box (style 4) -->
-					<div class="box4">
-						<span class="box4__number">02</span>
-						<h3 class="box4__title">Contribute</h3>
-						<p class="box4__text">Mappers see these requests and provide the data, through an app or an online editor. Optionally, proof of the data can be uploaded.</p>
-					</div>
-					<!-- end box (style 4) -->
-				</div>
+    <!-- get in touch -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row">
+          <!-- section title -->
+          <div class="col-xs-12">
+            <h2 class="section__title">Get in Touch</h2>
+            <p class="section__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
+          </div>
+          <!-- end section title -->
 
-				<div class="col-xs-12 col-sm-4">
-					<!-- box (style 4) -->
-					<div class="box4">
-						<span class="box4__number">03</span>
-						<h3 class="box4__title">Review</h3>
-            <p class="box4__text">Reviewers acknowledge or reject the data. Once acknowledged, the contributor and reviewer is paid by the Smart Contract.</p>
-					</div>
-					<!-- end box (style 4) -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end get started -->
+          <div class="col-xs-12 col-sm-6">
+            <!-- contact -->
+            <div class="contacts">
+              <ul class="contacts__list">
+                <li>
+                  <span class="lnr lnr-map"></span>
+                  PlaceBazaar<br>
+                  Ooijse Bandijk 48<br>
+                  Ooij, The Netherlands
+                </li>
+                <li>
+                  <span class="lnr lnr-inbox"></span>
+                  <a href="mailto:info@placebazaar.org">info@placebazaar.org</a>
+                </li>
+                <li>
+                  <span class="lnr lnr-phone-handset"></span>
+                  <a href="tel:+31629075065">+31 (0)6-29075065</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end contact -->
+          </div>
 
-	<!-- footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<!-- social list -->
-					<ul class="footer__social clearfix">
-						<li>
-							<a href="https://twitter.com/placebazaar"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href="https://github.com/placebazaar"><i class="fa fa-github"></i></a>
-						</li>
-						<li>
-							<a href="https://t.me/placebazaar"><i class="fa fa-telegram"></i></a>
-						</li>
-					</ul>
-					<!-- end social list -->
-				</div>
+          <div class="col-xs-12 col-sm-6">
+            <!-- form -->
+            <form action="https://contact.placebazaar.org/messages" method="post" id="contact-form" class="form form--contacts">
+              <div class="alert alert-success hidden" role="alert"></div>
+              <input type="text" class="form__input" name="name" placeholder="Name">
+              <input type="text" class="form__input" name="email" placeholder="Email">
+              <textarea class="form__textarea" name="message" placeholder="Message"></textarea>
 
-				<div class="col-xs-12">
-					<!-- copyright -->
-          <small class="footer__copyright">© 2017 <a href="#">PlaceBazaar</a>. Create by <a href="http://berk.es">Bèr Kessels</a></small>
-					<!-- end copyright -->
-				</div>
-				<div class="col-xs-12">
-          <p class="text-center">version: <%= version %>. built on <%= date %></small></p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- end footer -->
+              <!-- real people should not fill this in and expect good things -->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="contact-captcha" id="contact-captcha" tabindex="-1" value="">
+              </div>
 
-	<!-- sign in -->
-	<div id="signin" class="mfp-hide modal">
-		<button class="modal__close" type="button">
-			<span class="lnr lnr-cross"></span>
-		</button>
+              <input type="hidden" name="return" id="return" value="https://placebazaar.org/?msg=Thank+you+for+contacting+us#contact" />
 
-		<h6 class="modal__title">Sign In</h6>
+              <button class="form__btn" type="submit">Send</button>
+            </form>
+            <!-- end form -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end get in touch -->
 
-		<form class="form form--modal" action="#">
-			<input type="text" class="form__input" placeholder="Username">
-			<input type="password" class="form__input" placeholder="Password">
-			<button class="form__btn" type="button">Sign In</button>
-		</form>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- section title -->
+          <div class="col-xs-12">
+            <h2 class="section__title section__title--white">Subscribe For Our Newsletter</h2>
+          </div>
+          <!-- end section title -->
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup" class="col-xs-12">
+          <form
+            action="https://placebazaar.us18.list-manage.com/subscribe/post?u=4648c2b03bac9417f51edfa99&amp;id=96168c2d79"
+            method="post" id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form" class="subscribe validate"
+            target="_blank" novalidate>
 
-		<a href="#signup" class="modal__link modal-btn">Sign Up</a>
-	</div>
-	<!-- end sign in -->
+            <input type="email" value="" name="EMAIL" class="required email
+            subscribe__input" id="mce-EMAIL" placeholder="Enter your Email">
 
-	<!-- sign up -->
-	<div id="signup" class="mfp-hide modal">
-		<button class="modal__close" type="button">
-			<span class="lnr lnr-cross"></span>
-		</button>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4648c2b03bac9417f51edfa99_96168c2d79" tabindex="-1" value=""></div>
 
-		<h6 class="modal__title">Sign Up</h6>
+            <button type="submit" class="subscribe__btn" id=mc_embedded-subscribe" name="subscribe" value="Subscribe"><i class="fa fa-paper-plane-o"></i></button>
+          </form>
+          </div>
+          <!--End mc_embed_signup-->
+            <form action="#" class="subscribe" id="newsletter-subscribe">
+            </form>
+          </div>
 
-		<form class="form form--modal" action="#">
-			<input type="text" class="form__input" placeholder="Username">
-			<input type="text" class="form__input" placeholder="Email">
-			<input type="password" class="form__input" placeholder="Password">
-			<button class="form__btn" type="button">Sign Up</button>
-		</form>
+          <div class="col-xs-12">
+            <!-- social list -->
+            <ul class="footer__social clearfix">
+              <li>
+                <a href="https://twitter.com/placebazaar"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/placebazaar"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://t.me/placebazaar"><i class="fa fa-telegram"></i></a>
+              </li>
+            </ul>
+            <!-- end social list -->
+          </div>
 
-		<a href="#signin" class="modal__link modal-btn">Sign In</a>
-	</div>
-	<!-- end sign up -->
+          <div class="col-xs-12">
+            <!-- copyright -->
+            <small class="footer__copyright">© 2017 <a href="#">PlaceBazaar</a>. Create by <a href="http://berk.es">Bèr Kessels</a></small>
+            <!-- end copyright -->
+          </div>
+          <div class="col-xs-12">
+            <p class="text-center">version: <%= version %>. built on <%= date %></small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
 
-	<!-- preloader -->
-	<div class="preloader">
-		<div class="preloader__logo">
-			<img src="img/logo--dark.png" alt="">
-		</div>
-		<div class="preloader__spinner">
-			<div class="preloader__bounce1"></div>
-			<div class="preloader__bounce2"></div>
-		</div>
-	</div>
-	<!-- end preloader -->
+    <!-- sign in -->
+    <div id="signin" class="mfp-hide modal">
+      <button class="modal__close" type="button">
+        <span class="lnr lnr-cross"></span>
+      </button>
 
-	<!-- JS -->
-	<script src="js/jquery-2.2.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.marquee.min.js"></script>
-	<script src="js/smooth-scroll.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.parallax.min.js"></script>
-	<script src="js/scrolla.jquery.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.counterup.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
+      <h6 class="modal__title">Sign In</h6>
+
+      <form class="form form--modal" action="#">
+        <input type="text" class="form__input" placeholder="Username">
+        <input type="password" class="form__input" placeholder="Password">
+        <button class="form__btn" type="button">Sign In</button>
+      </form>
+
+      <a href="#signup" class="modal__link modal-btn">Sign Up</a>
+    </div>
+    <!-- end sign in -->
+
+    <!-- sign up -->
+    <div id="signup" class="mfp-hide modal">
+      <button class="modal__close" type="button">
+        <span class="lnr lnr-cross"></span>
+      </button>
+
+      <h6 class="modal__title">Sign Up</h6>
+
+      <form class="form form--modal" action="#">
+        <input type="text" class="form__input" placeholder="Username">
+        <input type="text" class="form__input" placeholder="Email">
+        <input type="password" class="form__input" placeholder="Password">
+        <button class="form__btn" type="button">Sign Up</button>
+      </form>
+
+      <a href="#signin" class="modal__link modal-btn">Sign In</a>
+    </div>
+    <!-- end sign up -->
+
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="preloader__logo">
+        <img src="img/logo--dark.png" alt="">
+      </div>
+      <div class="preloader__spinner">
+        <div class="preloader__bounce1"></div>
+        <div class="preloader__bounce2"></div>
+      </div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

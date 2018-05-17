@@ -1,3 +1,13 @@
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 $(document).ready(function () {
 	"use strict"; // start of use strict
 
@@ -198,4 +208,13 @@ $(document).ready(function () {
 		e.preventDefault();
 		$.magnificPopup.close();
 	});
+
+	/*==============================
+	Contact Form
+	==============================*/
+  /* Success Message */
+  if (getParameterByName('msg')) {
+    var message = getParameterByName('msg');
+    $('#contact-form .alert.alert-success').html(message).removeClass('hidden');
+  };
 });
