@@ -700,11 +700,17 @@
 
           <div class="col-xs-12 col-sm-6">
             <!-- form -->
-            <form action="#" class="form form--contacts">
-              <input type="text" class="form__input" placeholder="Name">
-              <input type="text" class="form__input" placeholder="Email">
-              <textarea class="form__textarea" placeholder="Message"></textarea>
-              <button class="form__btn" type="button">Send</button>
+            <form action="https://contact.placebazaar.org/messages" method="post" id="contact-form" class="form form--contacts">
+              <input type="text" class="form__input" name="name" placeholder="Name">
+              <input type="text" class="form__input" name="email" placeholder="Email">
+              <textarea class="form__textarea" name="message" placeholder="Message"></textarea>
+
+              <!-- real people should not fill this in and expect good things -->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="contact-captcha" id="contact-captcha" tabindex="-1" value="">
+              </div>
+
+              <button class="form__btn" type="submit">Send</button>
             </form>
             <!-- end form -->
           </div>
