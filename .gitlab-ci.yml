@@ -6,7 +6,7 @@ before_script:
 deploy:
   only:
     refs:
-      master
+      - master
   script:
     - bundle exec cap production deploy
   environment:
