@@ -2,7 +2,7 @@
 lock "~> 3.10.2"
 
 set :application, "placebazaar"
-set :repo_url, "git@github.com:placebazaar/site.git"
+set :repo_url, "git@git.webschuur.com:placebazaar/site.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
