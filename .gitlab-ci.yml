@@ -1,0 +1,15 @@
+image: ruby:2.4
+
+before_script:
+  - bundle install
+
+deploy:
+  only:
+    refs:
+      - master
+  script:
+    - bundle exec cap production deploy
+  environment:
+    name: production
+    url: https://placebazaar.org
+
