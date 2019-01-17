@@ -1668,6 +1668,8 @@ ul {
 	display: block;
 	text-align: center;
 	position: relative;
+  height: 380px;
+  background: url('../img/video.png') center;
 }
 .video:before {
 	content: '';
@@ -1686,9 +1688,12 @@ ul {
 }
 .video__btn {
 	position: relative;
+  display: block;
 	z-index: 2;
 	color: #fff;
 	font-size: 54px;
+  margin-top: 106px;
+  vertical-align: middle;
 }
 .video__btn:hover {
 	color: #00b47b;
